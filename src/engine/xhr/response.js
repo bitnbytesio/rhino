@@ -1,9 +1,9 @@
 class response {
 
-	constructor() {
-		
-	}
+    constructor() {
+
+    }
 
 }
 
-export {response};
+export { response };

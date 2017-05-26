@@ -1,10 +1,10 @@
 class usersCtrl {
 
-	constructor() {
+    constructor() {
 
-	}	
+    }
 
 }
 
 
-export {usersCtrl}
+export { usersCtrl }

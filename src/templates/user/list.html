@@ -1,27 +1,27 @@
 <users>
 
-<h2 data-bind="heading"></h2>
+    <h2 data-bind="heading"></h2>
 
-<table>
-	<tr>
-		<th>Name</th>
-		<th>DOB</th>
-		<th>Gender</th>
-		<th>IMAGE</th>
-		<th>Created At</th>
-	</tr>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>DOB</th>
+            <th>Gender</th>
+            <th>IMAGE</th>
+            <th>Created At</th>
+        </tr>
 
-	<% for (i in users) { %>
-		<tr>
-			<th><%= users[i].name %></th>
-			<th><%= users[i].dob %></th>
-			<th><%= users[i].gender %></th>
-			<th><img src="<%= users[i].image %>" width="64"></th>
-			<th><%= users[i].created_at %></th>
-		</tr>
-	<% } %>
-	
-		
-</table>
+        <% for (i in users) { %>
+        <tr>
+            <th><%= users[i].name %></th>
+            <th><%= users[i].dob %></th>
+            <th><%= users[i].gender %></th>
+            <th><img src="<%= users[i].image %>" width="64"></th>
+            <th><%= users[i].created_at %></th>
+        </tr>
+        <% } %>
+
+
+    </table>
 
 </users>

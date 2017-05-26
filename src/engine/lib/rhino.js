@@ -1,13 +1,13 @@
 export default class rhino {
 
-	constructor(what) {
+    constructor(what) {
 
-		this.w = what;
+        this.w = what;
 
-	}
+    }
 
-	test() {
-		alert(this.w);
-	}
+    test() {
+        alert(this.w);
+    }
 
 }

@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "Javascript framework to create one page application.",
   "private": true,
-  "scripts": {
-  },
+  "scripts": {},
   "author": "Harcharan Singh <artisangang@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-concat": "^2.6.1",
+    "gulp-if": "^2.0.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-uglify": "^3.0.0",
@@ -26,8 +26,10 @@
     "gulp-clean-css": "^3.4.0",
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.0.0",
+    "gulp-jshint": "^2.0.4",
     "gulp-rollup": "^2.11.0",
     "gulp-uglify": "^3.0.0",
-    "gulp-watch": "^4.3.11"
+    "gulp-watch": "^4.3.11",
+    "jshint": "^2.9.4"
   }
 }
