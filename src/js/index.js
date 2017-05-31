@@ -1,8 +1,10 @@
-import {application, request} from 'rhino';
+import {application, platform, request} from 'rhino';
 
 import {usersCtrl} from 'controllers/user';
 
 import {modules} from 'modules';
+
+//import {xhr} from 'request';
 
 let app = new application({
     selector: 'root',
@@ -13,12 +15,15 @@ let app = new application({
     viewSelector: 'content'
 });
 
+app.providers([
+	{provides:'xhr', using:request, deps:[]}
+	]);
 
 app.controllers([usersCtrl]);
 
 app.modules(modules);
 
 document.addEventListener('DOMContentLoaded', function () {
-    app.boot();
+    platform.boot(app);
 });
 

@@ -11,8 +11,4 @@ const modules = [
     }
 ];
 
-export
-    {
-    modules
-    }
-    ;
+export { modules };

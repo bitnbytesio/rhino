@@ -1,13 +1,11 @@
-import request from '../xhr/index';
-
-
 export default class application {
 
-    constructor(config) {
+    constructor(config) {  
 
-        this._config = config;
+        this._config = config;      
         this._controllers = [];
         this._modules = [];
+        this._providers = [];
     }
 
     controllers(array) {
@@ -22,13 +20,15 @@ export default class application {
         }
     }
 
-    boot() {
-
-        (new request).create(this._config.templateRoot + this._config.template).then(function (o) {
-            console.log(o);
-        });
-
-
+    providers(array) {
+        for (let i in array) {
+            if (typeof array[i].deps == 'Array') {          
+                this.providers(array[i].deps);
+            }
+            let factory = new array[i].using;
+            this._providers[array[i].provides] = factory;
+        }
     }
 
+        
 }

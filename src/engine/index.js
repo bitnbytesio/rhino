@@ -1,5 +1,7 @@
 import application from './lib/application';
 
-import request from './xhr/index';
+import platform from './lib/platform';
 
-export { application, request };
+import request from './xhr/request';
+
+export { application, request, platform };
